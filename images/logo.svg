@@ -1,0 +1,16 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="220" rx="24" fill="#1F3A5F"></rect>
+  
+  <circle cx="110" cy="70" r="28" fill="#4FC3F7"></circle>
+  <path d="M110 42L116 58H133L119 68L124 84L110 74L96 84L101 68L87 58H104L110 42Z" fill="white"></path>
+  
+  <rect x="45" y="115" width="130" height="50" rx="12" fill="white"></rect>
+  
+  <text x="110" y="147" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1F3A5F">
+    DICT
+  </text>
+  
+  <text x="110" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#D9E6F2">
+    Department of ICT
+  </text>
+</svg>
