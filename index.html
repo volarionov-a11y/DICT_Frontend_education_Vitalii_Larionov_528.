@@ -147,6 +147,105 @@
         </article>
 
     </section>
+    <!-- ================= ОСВІТНЯ ПРОГРАМА ================= -->
+
+    <section id="education-program">
+
+        <h2>1 Курс</h2>
+
+        <table>
+
+            <thead>
+            <tr>
+                <th>1 семестр</th>
+                <th>Кредити</th>
+                <th>2 семестр</th>
+                <th>Кредити</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+            <tr>
+                <td>Мовні компетентності (іноземна мова)</td>
+                <td>3.00</td>
+                <td>Іноземна мова</td>
+                <td>3.00</td>
+            </tr>
+
+            <tr>
+                <td>Українські студії</td>
+                <td>3.00</td>
+                <td>Формування системного наукового світогляду (за вибором)</td>
+                <td>3.00</td>
+            </tr>
+
+            <tr>
+                <td>Правова компетентність (на вибір)</td>
+                <td>3.00</td>
+                <td>Основи теорії кіл</td>
+                <td>4.00</td>
+            </tr>
+
+            <tr>
+                <td>Вища математика</td>
+                <td>5.00</td>
+                <td>Вища математика</td>
+                <td>5.00</td>
+            </tr>
+
+            <tr>
+                <td>Дискретна математика</td>
+                <td>5.00</td>
+                <td>Фізика</td>
+                <td>5.00</td>
+            </tr>
+
+            <tr>
+                <td>Основи інфокомунікацій</td>
+                <td>5.00</td>
+                <td>Алгоритми і структури даних</td>
+                <td>4.00</td>
+            </tr>
+
+            <tr>
+                <td>Програмування на Python</td>
+                <td>4.50</td>
+                <td>Програмування на Python</td>
+                <td>4.50</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Навчальна практика</td>
+                <td>3.00</td>
+            </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <p>
+            Перший предмет «Основи інфокомунікацій» розповість про
+            існуючі навчальні програми, сучасні тенденції в інфокомунікаціях
+            та можливості майбутньої професії.
+        </p>
+
+        <p>
+            Фундаментальні курси «Вища математика», «Дискретна математика»
+            та «Фізика» формують основу для подальшого вивчення
+            професійних дисциплін.
+        </p>
+
+        <p>
+            Під час вивчення дисципліни «Програмування на Python»
+            студенти отримують базові навички програмування,
+            роботи з алгоритмами та структурами даних.
+        </p>
+
+    </section>
 
 
     <!-- ================= ЯКЩО В ЧИСЛАХ ================= -->
@@ -427,7 +526,143 @@
         </video>
 
     </section>
+    <!-- ================= ФОРМА ДЛЯ АБІТУРІЄНТІВ ================= -->
 
+    <section id="admission">
+
+        <h2>Вступ 2025</h2>
+
+        <form action="#" method="post">
+
+            <p>
+                <label for="full-name">
+                    Ваше ім'я та прізвище:
+                </label>
+                <br>
+
+                <input type="text"
+                       id="full-name"
+                       name="full-name"
+                       required>
+            </p>
+
+
+            <p>
+                <label for="phone">
+                    Контактний телефон:
+                </label>
+                <br>
+
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       required>
+            </p>
+
+
+            <p>
+                <label for="email">
+                    Електронна пошта:
+                </label>
+                <br>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+            </p>
+
+
+            <p>
+                <label for="telegram">
+                    Телеграм:
+                </label>
+                <br>
+
+                <input type="text"
+                       id="telegram"
+                       name="telegram"
+                       required>
+            </p>
+
+
+            <p>
+                <label for="math-score">
+                    Бали НМТ - Математика:
+                </label>
+                <br>
+
+                <input type="number"
+                       id="math-score"
+                       name="math-score"
+                       min="100"
+                       max="200"
+                       required>
+            </p>
+
+
+            <p>
+                <label for="ukrainian-score">
+                    Бали НМТ - Українська мова:
+                </label>
+                <br>
+
+                <input type="number"
+                       id="ukrainian-score"
+                       name="ukrainian-score"
+                       min="100"
+                       max="200"
+                       required>
+            </p>
+
+
+            <p>
+                <label for="history-score">
+                    Бали НМТ - Історія України:
+                </label>
+                <br>
+
+                <input type="number"
+                       id="history-score"
+                       name="history-score"
+                       min="100"
+                       max="200"
+                       required>
+            </p>
+
+
+            <p>
+                <label for="fourth-subject">
+                    Четвертий предмет з НМТ і бал за ним:
+                </label>
+                <br>
+
+                <input type="text"
+                       id="fourth-subject"
+                       name="fourth-subject">
+            </p>
+
+
+            <p>
+                <label for="questions">
+                    Які питання вас цікавлять?
+                </label>
+                <br>
+
+                <textarea id="questions"
+                          name="questions"
+                          rows="6"
+                          cols="50"></textarea>
+            </p>
+
+
+            <button type="submit">
+                Відправити
+            </button>
+
+        </form>
+
+    </section>
 </main>
 
 
