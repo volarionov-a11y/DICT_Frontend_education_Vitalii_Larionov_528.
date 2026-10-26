@@ -1,0 +1,81 @@
+@charset "UTF-8";
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #8e8e8e;
+  color: #FFF;
+  max-width: 80em;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+/* Медіа-елементи з попередніх практичних */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+header img,
+footer img {
+  width: 120px;
+  height: auto;
+}
+
+#partners img {
+  max-width: 180px;
+  height: auto;
+  margin: 10px;
+}
+
+#banner img,
+#banner video,
+#science img,
+#science video,
+#news img,
+#news video {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  padding: 20px 0;
+}
+
+footer {
+  padding: 40px 0;
+}
+
+#reviews article {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #8e8e8e;
+}
+
+#numbers article {
+  padding: 10px;
+  border-right: 1px solid #FF3A3A;
+}
+#numbers article:last-of-type {
+  border-right: none;
+}
+
+#news article {
+  padding: 10px;
+  border-right: 1px solid #FF3A3A;
+}
+#news article:last-of-type {
+  border-right: none;
+}
+
+#specialties article {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #8e8e8e;
+}
+
+/*# sourceMappingURL=main.css.map */

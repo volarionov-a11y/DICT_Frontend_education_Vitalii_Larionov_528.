@@ -1,0 +1,10 @@
+#numbers {
+  article {
+    padding: 10px;
+    border-right: 1px solid $red;
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}
