@@ -1,13 +1,13 @@
 body {
-  font-family: $font-stack;
-  background-color: $grey;
-  color: #FFF;
-
-  max-width: 80em;
+  background: var(--primary-color);
+  color: var(--primary-text-color);
+  max-width: $widedesk;
   margin: 0 auto;
+  padding: 0 $base-padding;
+}
 
-  padding-left: 16px;
-  padding-right: 16px;
+a {
+  color: var(--red-color);
 }
 
 section {
@@ -44,5 +44,28 @@ footer img {
   video {
     max-width: 100%;
     height: auto;
+  }
+}
+
+.button {
+  background: var(--red-color);
+  color: var(--primary-text-color);
+  width: fit-content;
+  padding: 7px 14px;
+  border-radius: 5px;
+  margin: 40px 0;
+  border: 1px solid var(--red-color);
+
+  p {
+    margin: 0;
+  }
+
+  &:hover {
+    background: var(--red-hover-color);
+    border-color: var(--red-hover-color);
+  }
+
+  &:focus {
+    background: var(--primary-color);
   }
 }
