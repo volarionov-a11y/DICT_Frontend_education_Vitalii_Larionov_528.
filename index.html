@@ -25,49 +25,49 @@
 <!-- ================= HEADER ================= -->
 
 <header>
-
-    <!-- Логотип -->
-    <a href="#top">
+    <a href="#top"
+       class="logo"
+       title="На початок сторінки">
         <img src="images/logo.svg"
              alt="Логотип кафедри"
              title="Кафедра інформаційно-комунікаційних технологій">
     </a>
 
-
-    <!-- Навігація -->
-    <nav>
-        <ul>
+    <nav aria-label="Головна навігація">
+        <ul class="main-menu">
             <li>
-                <a href="#specialties">Спеціальності</a>
+                <a class="menu-link" href="#specialties">Спеціальності</a>
             </li>
-
             <li>
-                <a href="#science">Наука</a>
+                <a class="menu-link" href="#science">Наука</a>
             </li>
-
             <li>
-                <a href="#news">Новини</a>
+                <a class="menu-link" href="#news">Новини</a>
             </li>
-
             <li>
-                <a href="#contact">Контакти</a>
+                <a class="menu-link" href="#contact">Контакти</a>
             </li>
         </ul>
     </nav>
 
-
-    <!-- Пошук -->
-    <button type="button" aria-label="Пошук">
+    <button class="search"
+            type="button"
+            aria-label="Пошук"
+            title="Пошук">
         🔍
     </button>
 
+    <div class="lang">
+        <ul class="lang-wrapper">
+            <li class="ua">
+                <a href="#" class="is-active" lang="uk">UA</a>
+            </li>
 
-    <!-- Перемикання мов -->
-    <div>
-        <a href="#">UA</a>
-        <a href="#">EN</a>
+            <li class="en">
+                <a href="#" lang="en">EN</a>
+            </li>
+        </ul>
     </div>
-
 </header>
 
 
@@ -79,6 +79,28 @@
     <!-- ================= БАНЕР ================= -->
 
     <section id="banner">
+        <div class="content-wrapper">
+            <h1>Створюй майбутнє. Тут і зараз!</h1>
+
+            <div class="description">
+                <p>
+                    Вибери не просто освіту - обери шлях до свого технологічного майбутнього!
+                    Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають
+                    двері до кар’єри мрії. Почни свій шлях вже сьогодні!
+                </p>
+            </div>
+
+            <a href="#specialties" class="button">
+                Хочу поступити
+            </a>
+        </div>
+
+        <div class="image-wrapper">
+            <img src="images/banner-corporation.svg"
+                 alt="Банер сайту кафедри"
+                 title="Банер сайту кафедри">
+        </div>
+    </section>
 
         <h1>
             Створюй майбутнє. Тут і зараз!
