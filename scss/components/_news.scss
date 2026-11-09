@@ -1,5 +1,14 @@
 #news {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  h2 {
+    width: 100%;
+  }
+
   article {
+    flex: 1 1 100%;
     padding: 10px;
     border-right: 1px solid $red;
 

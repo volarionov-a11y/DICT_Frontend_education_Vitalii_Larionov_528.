@@ -1,5 +1,19 @@
 #reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+
+  h2 {
+    width: 100%;
+  }
+
   article {
     @include card;
+    flex: 1 1 400px;
+  }
+
+  audio {
+    flex: 1 1 300px;
   }
 }

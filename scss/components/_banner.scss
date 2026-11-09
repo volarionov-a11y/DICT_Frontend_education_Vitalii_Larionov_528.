@@ -1,0 +1,51 @@
+#banner {
+  position: relative;
+  height: 720px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background: var(--primary-color);
+
+  .content-wrapper {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    position: relative;
+    z-index: 9;
+
+    h1 {
+      margin: 0;
+    }
+
+    .description {
+      p {
+        margin: 0;
+      }
+    }
+
+    .button {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .image-wrapper {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    width: 45%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
