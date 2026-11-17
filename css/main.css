@@ -374,4 +374,126 @@ footer {
   height: auto;
 }
 
+.grid-page section {
+  margin: 0;
+}
+.grid-page .grid-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 0;
+}
+.grid-page .grid-header {
+  display: block;
+  padding: 40px 20px;
+  text-align: center;
+  background: #2a2a2a;
+}
+.grid-page .grid-header h1 {
+  margin: 0 0 10px;
+}
+.grid-page .grid-header p {
+  margin: 0;
+}
+.grid-page .grid-navigation {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background: #7c7c7c;
+}
+.grid-page .grid-navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.grid-page .grid-navigation a:hover {
+  color: #ff3b39;
+}
+.grid-page .grid-main {
+  display: grid;
+  grid-template-areas: "content sidebar";
+  grid-template-columns: minmax(0, 3fr) minmax(220px, 1fr);
+  gap: 20px;
+  padding: 40px 0;
+}
+.grid-page .grid-content {
+  grid-area: content;
+  min-width: 0;
+}
+.grid-page .grid-content h2 {
+  margin-top: 0;
+}
+.grid-page .grid-article {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #7c7c7c;
+  border-radius: 10px;
+}
+.grid-page .grid-sidebar {
+  grid-area: sidebar;
+  padding: 20px;
+  background: #2a2a2a;
+  border-radius: 10px;
+}
+.grid-page .grid-sidebar h2 {
+  margin-top: 0;
+}
+.grid-page .grid-gallery {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.grid-page .grid-gallery figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 180px auto;
+  overflow: hidden;
+  border: 1px solid #7c7c7c;
+  border-radius: 10px;
+  background: #fff;
+}
+.grid-page .grid-gallery figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.grid-page .grid-gallery figure figcaption {
+  padding: 10px;
+  text-align: center;
+  color: #1d1d1d;
+  background: #f8f8f8;
+  font-weight: 700;
+}
+.grid-page .grid-footer {
+  padding: 30px 20px;
+  text-align: center;
+  background: #2a2a2a;
+}
+.grid-page .grid-footer p {
+  margin: 0 0 10px;
+}
+@media (max-width: 48em) {
+  .grid-page .grid-main {
+    grid-template-areas: "content" "sidebar";
+    grid-template-columns: 1fr;
+  }
+  .grid-page .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 30em) {
+  .grid-page .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+  .grid-page .grid-navigation {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
