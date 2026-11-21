@@ -1,11 +1,15 @@
 $base-padding: 20px;
-$base-padding: 20px;
+
 
 body {
   font-size: 14px;
+  line-height: 1.4;
+
   font-family: $comfortaa;
+
   color: var(--primary-text-color);
 }
+
 
 h1,
 h2,
@@ -24,48 +28,53 @@ h6,
   font-family: $geologica;
 }
 
+
 h1,
 .h1 {
-  font-size: 38px;
+  font-size: 28px;
 }
 
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 26px;
 }
 
 h3,
 .h3 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 h4,
 .h4 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 h5,
 .h5 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h6,
 .h6 {
-  font-size: 16px;
+  font-size: 18px;
 }
+
 
 .p,
 p {
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: inherit;
+  line-height: 1.4;
+
   margin: 12px 0;
 }
+
 
 .small,
 small {
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.4;
 }
+
 
 .scc_large-text,
 .large {
@@ -73,9 +82,12 @@ small {
   line-height: 1.4;
 }
 
+
 a {
   color: var(--red-color);
+
   font-weight: 400;
+
   text-decoration: underline;
 
   &:active,
@@ -85,10 +97,90 @@ a {
   }
 }
 
+
 strong {
   font-weight: 700;
 }
 
+
 em {
   font-style: italic;
+}
+
+
+@media (min-width: 796px) {
+
+  body {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  h1,
+  .h1 {
+    font-size: 32px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 28px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 26px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 24px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 22px;
+  }
+
+  h6,
+  .h6 {
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+
+  body {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  h1,
+  .h1 {
+    font-size: 36px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 32px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 30px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 28px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 24px;
+  }
+
+  h6,
+  .h6 {
+    font-size: 22px;
+  }
 }

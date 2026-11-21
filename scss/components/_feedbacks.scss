@@ -1,19 +1,35 @@
 #reviews {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+
+  grid-template-columns: 1fr;
+
   gap: 20px;
+
   align-items: center;
 
   h2 {
-    width: 100%;
+    grid-column: 1 / -1;
   }
 
   article {
     @include card;
-    flex: 1 1 400px;
   }
 
   audio {
-    flex: 1 1 300px;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 796px) {
+
+  #reviews {
+    grid-template-columns:
+            repeat(2, 1fr);
+
+    h2,
+    audio {
+      grid-column: 1 / -1;
+    }
   }
 }
