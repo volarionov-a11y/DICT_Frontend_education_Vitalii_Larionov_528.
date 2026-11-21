@@ -1,19 +1,48 @@
 #numbers {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+
+  grid-template-columns: 1fr;
+
   gap: 20px;
 
   h2 {
-    width: 100%;
+    grid-column: 1 / -1;
   }
 
   article {
-    flex: 1 1 180px;
-    padding: 10px;
-    border-right: 1px solid $red;
+    padding: 20px 10px;
+
+    border-bottom: 1px solid $red;
 
     &:last-of-type {
-      border-right: none;
+      border-bottom: none;
+    }
+  }
+}
+
+
+@media (min-width: 796px) {
+
+  #numbers {
+    grid-template-columns:
+            repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 1200px) {
+
+  #numbers {
+    grid-template-columns:
+            repeat(4, 1fr);
+
+    article {
+      border-bottom: 0;
+      border-right: 1px solid $red;
+
+      &:last-of-type {
+        border-right: none;
+      }
     }
   }
 }
